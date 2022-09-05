@@ -1,0 +1,141 @@
+:root {
+  /* ---------- color ---------- */
+  --body-color: #212529;
+  --header-color: #1b1f22;
+  --link-color: white;
+  --text-color: white;
+}
+
+.inbox-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+  text-transform: capitalize;
+  color: white;
+}
+.chat__list {
+  background-color: var(--header-color);
+  height: 90%;
+  width: 20%;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.contact__list {
+  margin: 1rem 2rem;
+}
+
+.contact__item {
+  background-color: #323435;
+  margin: 1rem 0;
+  padding: 1rem 0;
+  border-radius: 1em;
+}
+
+.newchat {
+  padding: 0.5rem 1.5rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  border: none;
+  background-color: blue;
+  color: white;
+}
+
+.message__container {
+  background-color: #1b1f22;
+  height: 90%;
+  width: 70%;
+  border-radius: 1rem;
+}
+
+.message__header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  color: white;
+  box-shadow: 0px 2px rgba(255, 255, 255, 0.459);
+  height: 10%;
+}
+
+.bx {
+  margin: 0 1rem;
+  font-size: 1.2rem;
+  font-weight: 590;
+}
+
+.message__main {
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.message__content-received,
+.message__content-sent {
+  margin: 0;
+  line-height: 2rem;
+}
+
+.message__text {
+  width: 100%;
+  display: flex;
+  padding: 0 3rem;
+  margin: 0.5rem 0;
+}
+
+.message__content-sent .message__text {
+  justify-content: end;
+}
+
+.message__content-received .message__text {
+  justify-content: start;
+}
+.message__content-sent {
+  width: 100%;
+}
+.message__sent {
+  background-color: blue;
+  max-width: 70%;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+}
+
+.message__content-received {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+.message__received {
+  background-color: green;
+  max-width: 70%;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+}
+
+.message__footer {
+  height: 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3rem;
+  box-shadow: 0px -2px rgba(255, 255, 255, 0.459);
+}
+
+.type__message {
+  width: 90%;
+  padding: 0.5rem 2rem;
+  font-size: 1rem;
+}
+
+.message__footer .bx {
+  background-color: blue;
+  padding: 0.8rem;
+  border-radius: 50%;
+  color: white;
+}

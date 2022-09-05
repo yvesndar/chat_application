@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* ---------- color ---------- */
+  --body-color: #212529;
+  --header-color: #1b1f22;
+  --form-color: #1b1f22;
+  --link-color: white;
+  --text-color: white;
+}
+
+body {
+  background-color: var(--body-color);
+  font-family: Arial, Helvetica, sans-serif;
+}
+body ul {
+  list-style: none;
+}
+body a {
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+body a,
+body button {
+  cursor: pointer;
+}
+
+header {
+  background-color: var(--header-color);
+  width: 100vw;
+  text-transform: capitalize;
+}
+
+.nav {
+  margin: auto;
+  display: flex;
+  width: 70vw;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.nav__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav__logo img {
+  width: 6rem;
+}
+.nav__menu {
+  width: 50%;
+  padding-top: 1rem;
+}
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.reg-container {
+  height: 90vh;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-transform: capitalize;
+}
+
+.registration-form {
+  background-color: var(--form-color);
+  color: var(--text-color);
+  padding: 2rem;
+  display: block;
+  width: 50%;
+}
+.registration-form .title {
+  font-size: 2.6rem;
+  margin: 1rem 0;
+}
+.registration-form .description {
+  margin: 1rem 0;
+  font-size: 1.2rem;
+}
+.registration-form input {
+  width: 60%;
+  padding: 1rem;
+  font-size: 1.2rem;
+  margin: 1rem 0;
+  border: none;
+  border-radius: 1rem;
+}
+.registration-form input:focus {
+  outline: none;
+}
+.registration-form .buttons {
+  display: block;
+  margin: 1rem 0;
+}
+.registration-form .register-button,
+.registration-form .login-button {
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  margin: 1rem 2rem;
+  font-weight: bold;
+}
