@@ -40,7 +40,8 @@ function Register() {
       }).then((Response) => {
         console.log(Response);
       });
-      navigate("/chat");
+      alert("You have been successfull Registered. Please log in to continue");
+      navigate("/login");
     }
   };
 
